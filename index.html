@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Ecommerce Website</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.0.10/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+      .video-container {
+          background-size: cover;
+          background-position: center center;
+          position: relative;
+          z-index: 0;
+      }
+
+      .bg-video {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+
+      }
+
+      .video-overlay {
+        z-index: 100;
+        position: relative;
+      }
+  </style>
+</head>
+
+<body class="bg-gray-100 font-sans">
+
+    <!-- Navbar -->
+    <nav class="bg-blue-500 shadow-lg">
+        <div class="container mx-auto px-4">
+            <div class="flex items-center justify-between py-3">
+                <a href="#" class="text-white text-2xl font-bold">Ecommerce</a>
+                <ul class="flex items-center space-x-4">
+                    <li><a href="#" class="text-white">Home</a></li>
+                    <li><a href="#" class="text-white">Products</a></li>
+                    <li><a href="#" class="text-white">Cart</a></li>
+                    <li><a href="#" class="text-white">Login</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="bg-gray-200 py-20 video-container">
+        <video class="bg-video" autoplay muted loop>
+          <source src="Assets/banner1.mp4" type="video/mp4">
+        </video>
+        <div class="container mx-auto px-4 video-overlay">
+            <div class="flex items-center justify-center">
+                <div class="w-full md:w-2/3 text-center bg-black bg-opacity-80 p-8 rounded rounded-md">
+                  <h1 class="text-white text-4xl font-bold mb-6">Welcome to our <span class="text-blue-500">Ecommerce Store</span></h1>
+                  <p class="text-white text-xl mb-12">Shop the latest trends in fashion, electronics, and more.</p>
+                  <a href="#" class="bg-blue-500 hover:bg-blue-600 text-white px-6 py-3 font-semibold rounded">Shop
+                      Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Grid -->
+    <section class="py-10">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-6">Featured Products</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+                <div class="bg-white shadow-md p-4">
+                    <img src="https://via.placeholder.com/150" alt="Product 1" class="w-full mb-4">
+                    <h3 class="text-xl font-semibold mb-2">Product 1</h3>
+                    <p class="text-gray-500">$99.99</p>
+                    <a href="#" class="block mt-4 bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 font-semibold rounded">Add to Cart</a>
+                </div>
+                <div class="bg-white shadow-md p-4">
+                    <img src="https://via.placeholder.com/150" alt="Product 2" class="w-full mb-4">
+                    <h3 class="text-xl font-semibold mb-2">Product 2</h3>
+                    <p class="text-gray-500">$49.99</p>
+                    <a href="#" class="block mt-4 bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 font-semibold rounded">Add to Cart</a>
+                </div>
+                <div class="bg-white shadow-md p-4">
+                    <img src="https://via.placeholder.com/150" alt="Product 3" class="w-full mb-4">
+                    <h3 class="text-xl font-semibold mb-2">Product 3</h3>
+                    <p class="text-gray-500">$149.99</p>
+                    <a href="#" class="block mt-4 bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 font-semibold rounded">Add to Cart</a>
+                </div>
+                <div class="bg-white shadow-md p-4">
+                    <img src="https://via.placeholder.com/150" alt="Product 4" class="w-full mb-4">
+                    <h3 class="text-xl font-semibold mb-2">Product 4</h3>
+                    <p class="text-gray-500">$79.99</p>
+                    <a href="#" class="block mt-4 bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 font-semibold rounded">Add to Cart</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="flex items-center justify-between">
+                <p>&copy; 2023 Ecommerce. All rights reserved.</p>
+                <ul class="flex items-center space-x-4">
+                    <li><a href="#" class="text-white">Privacy Policy</a></li>
+                    <li><a href="#" class="text-white">Terms of Service</a></li>
+                    <li><a href="#" class="text-white">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
+
